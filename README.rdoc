@@ -1,1 +1,0 @@
-Heroku: http://stormy-forest-4517.herokuapp.com/breweries
