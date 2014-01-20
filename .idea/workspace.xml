@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ratings/new.html.erb" afterPath="$PROJECT_DIR$/app/views/ratings/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/beer.rb" afterPath="$PROJECT_DIR$/app/models/beer.rb" />
     </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +52,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="beer.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="3" selection-start="271" selection-end="271" vertical-scroll-proportion="0.1933405" vertical-offset="0" max-vertical-offset="931">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="86" selection-start="148" selection-end="148" vertical-scroll-proportion="0.049614113" vertical-offset="0" max-vertical-offset="907">
+            <state line="3" column="86" selection-start="148" selection-end="148" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
@@ -91,13 +99,13 @@
         <option value="$PROJECT_DIR$/app/views/beers/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/models/rating.rb" />
-        <option value="$PROJECT_DIR$/app/models/beer.rb" />
         <option value="$PROJECT_DIR$/app/views/beers/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/ratings/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/ratings/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/beer.rb" />
       </list>
     </option>
   </component>
@@ -225,6 +233,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ratebeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ratebeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="216" selection-end="216" vertical-scroll-proportion="0.13245033" vertical-offset="0" max-vertical-offset="906">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/rating.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.13245033" vertical-offset="0" max-vertical-offset="906">
@@ -683,7 +702,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="86" selection-start="148" selection-end="148" vertical-scroll-proportion="0.049614113" vertical-offset="0" max-vertical-offset="907">
+        <state line="3" column="86" selection-start="148" selection-end="148" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/beer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="271" selection-end="271" vertical-scroll-proportion="0.1933405" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
