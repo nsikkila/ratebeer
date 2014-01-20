@@ -5,7 +5,7 @@ Ratebeer::Application.routes.draw do
 
   root 'breweries#index'
 
-  get 'ratings', to: 'ratings#index'
+  get 'ratings', to:'ratings#index'
 
   get 'ratings/new', to:'ratings#new'
 
