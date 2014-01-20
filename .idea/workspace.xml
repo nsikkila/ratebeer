@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ratebeer.iml" afterPath="$PROJECT_DIR$/.idea/ratebeer.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
     </list>
     <ignored path="ratebeer.iws" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="ratings_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ratings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.16111708" vertical-offset="0" max-vertical-offset="931">
+            <state line="10" column="66" selection-start="214" selection-end="214" vertical-scroll-proportion="0.16111708" vertical-offset="0" max-vertical-offset="931">
               <folding />
             </state>
           </provider>
@@ -641,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ratings_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.16111708" vertical-offset="0" max-vertical-offset="931">
+        <state line="10" column="66" selection-start="214" selection-end="214" vertical-scroll-proportion="0.16111708" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
