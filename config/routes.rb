@@ -7,6 +7,8 @@ Ratebeer::Application.routes.draw do
 
   get 'ratings', to: 'ratings#index'
 
+  get 'ratings/new', to:'ratings#new'
+
   # get 'kaikki_bisset', to: 'beers#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
