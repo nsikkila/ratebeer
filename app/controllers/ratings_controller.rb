@@ -7,4 +7,7 @@ class RatingsController < ApplicationController
     @rating = Rating.new
   end
 
+  def create
+    raise
+  end
 end
