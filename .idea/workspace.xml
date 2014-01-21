@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ratings/index.html.erb" afterPath="$PROJECT_DIR$/app/views/ratings/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="63" selection-start="170" selection-end="170" vertical-scroll-proportion="0.11278196" vertical-offset="0" max-vertical-offset="1080">
+            <state line="18" column="42" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1080">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="11" selection-start="568" selection-end="568" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -46,19 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/ratings/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="58" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+            <state line="6" column="122" selection-start="236" selection-end="236" vertical-scroll-proportion="0.099228226" vertical-offset="0" max-vertical-offset="907">
               <folding />
             </state>
           </provider>
@@ -90,9 +87,9 @@
         <option value="$PROJECT_DIR$/app/controllers/breweries_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/beers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/beers/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/ratings/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
       </list>
     </option>
   </component>
@@ -197,6 +194,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ratebeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ratebeer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -674,30 +693,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/beers/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="52" selection-start="531" selection-end="531" vertical-scroll-proportion="0.31422272" vertical-offset="0" max-vertical-offset="907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="11" selection-start="568" selection-end="568" vertical-scroll-proportion="0.36383682" vertical-offset="0" max-vertical-offset="907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ratings/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
@@ -709,9 +707,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="9" selection-start="210" selection-end="210" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="63" selection-start="170" selection-end="170" vertical-scroll-proportion="0.11278196" vertical-offset="0" max-vertical-offset="1080">
+        <state line="18" column="42" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/beers/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="11" selection-start="568" selection-end="568" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ratings/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="122" selection-start="236" selection-end="236" vertical-scroll-proportion="0.099228226" vertical-offset="0" max-vertical-offset="907">
           <folding />
         </state>
       </provider>
