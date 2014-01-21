@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/beer.rb" afterPath="$PROJECT_DIR$/app/models/beer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/brewery.rb" afterPath="$PROJECT_DIR$/app/models/brewery.rb" />
     </list>
     <ignored path="ratebeer.iws" />
@@ -74,7 +73,7 @@
       <file leaf-file-name="brewery.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="41" selection-start="75" selection-end="75" vertical-scroll-proportion="0.016111707" vertical-offset="0" max-vertical-offset="931">
+            <state line="3" column="3" selection-start="119" selection-end="119" vertical-scroll-proportion="0.048335124" vertical-offset="0" max-vertical-offset="931">
               <folding />
             </state>
           </provider>
@@ -770,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="41" selection-start="75" selection-end="75" vertical-scroll-proportion="0.016111707" vertical-offset="0" max-vertical-offset="931">
+        <state line="3" column="3" selection-start="119" selection-end="119" vertical-scroll-proportion="0.048335124" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
