@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ratings/new.html.erb" afterPath="$PROJECT_DIR$/app/views/ratings/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/rating.rb" afterPath="$PROJECT_DIR$/app/models/rating.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
     </list>
     <ignored path="ratebeer.iws" />
@@ -46,28 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ratings_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ratings_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="4" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.24807057" vertical-offset="0" max-vertical-offset="907">
+            <state line="8" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.12889366" vertical-offset="0" max-vertical-offset="931">
               <folding />
             </state>
           </provider>
@@ -109,9 +88,9 @@
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/rating.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/ratings/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -811,23 +790,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+        <state line="15" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.24807057" vertical-offset="0" max-vertical-offset="907">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ratings_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="4" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+        <state line="18" column="4" selection-start="387" selection-end="387" vertical-scroll-proportion="0.29001075" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ratings/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.24807057" vertical-offset="0" max-vertical-offset="907">
+        <state line="8" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.12889366" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
