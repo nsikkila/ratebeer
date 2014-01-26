@@ -11,14 +11,20 @@
   <% end %>
 </p>
 
-<h2>Ratings</h2>
+<h2>Beer Clubs:</h2>
+<ul>
+<% @user.beer_clubs.each do | club |%>
+  <li><%= link_to "#{club.name}", club %></li>
+<% end %>
+</ul>
+<h2>Ratings:</h2>
 <ul>
   <% @user.ratings.each do |rating| %>
   <li>
     <%= rating %>
     <%= link_to "Delete", rating, method: :delete %>
   </li>
-      <% end %>
+  <% end %>
 </ul>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
