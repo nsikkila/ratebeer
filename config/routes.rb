@@ -9,6 +9,8 @@ Ratebeer::Application.routes.draw do
 
   resources :ratings, :only => [:index, :new, :create, :destroy]
 
+  get 'signup', to: 'user#new'
+
   # get 'kaikki_bisset', to: 'beers#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
