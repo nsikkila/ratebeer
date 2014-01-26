@@ -18,7 +18,7 @@
 <h2>Members:</h2>
 <ul>
 <% @beer_club.users.each do | u | %>
-    <li><%= u.username %></li>
+    <li><%=link_to "#{u.username}", u %></li>
       <% end %>
 </ul>
 <%= link_to 'Edit', edit_beer_club_path(@beer_club) %> |
