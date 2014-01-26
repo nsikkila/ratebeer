@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/session_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="ratebeer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.46758103" vertical-offset="0" max-vertical-offset="802">
+            <state line="7" column="52" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/session_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="3" selection-start="536" selection-end="536" vertical-scroll-proportion="0.36319613" vertical-offset="0" max-vertical-offset="826">
               <folding />
             </state>
           </provider>
@@ -63,9 +74,10 @@
         <option value="$PROJECT_DIR$/app/controllers/breweries_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/beers/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/brewery.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/ratings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/session_controller.rb" />
       </list>
     </option>
   </component>
@@ -132,46 +144,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ratebeer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,11 +383,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/breweries_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="104" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="5" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1230" />
@@ -650,13 +617,6 @@
         <state line="76" column="104" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.7905478" vertical-offset="404" max-vertical-offset="1335" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="40" selection-start="871" selection-end="871" vertical-scroll-proportion="0.34503633" vertical-offset="165" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="5" selection-start="384" selection-end="384" vertical-scroll-proportion="0.2905569" vertical-offset="0" max-vertical-offset="826">
@@ -673,7 +633,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.46758103" vertical-offset="0" max-vertical-offset="802">
+        <state line="11" column="36" selection-start="370" selection-end="370" vertical-scroll-proportion="0.20573565" vertical-offset="0" max-vertical-offset="802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="52" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/session_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="3" selection-start="536" selection-end="536" vertical-scroll-proportion="0.36319613" vertical-offset="0" max-vertical-offset="826">
           <folding />
         </state>
       </provider>
