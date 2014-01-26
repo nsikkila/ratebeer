@@ -28,7 +28,7 @@
       <file leaf-file-name="brewery.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="94" selection-start="188" selection-end="188" vertical-scroll-proportion="0.06444683" vertical-offset="0" max-vertical-offset="931">
+            <state line="4" column="115" selection-start="209" selection-end="209" vertical-scroll-proportion="0.06444683" vertical-offset="0" max-vertical-offset="931">
               <folding />
             </state>
           </provider>
@@ -812,7 +812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/brewery.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="94" selection-start="188" selection-end="188" vertical-scroll-proportion="0.06444683" vertical-offset="0" max-vertical-offset="931">
+        <state line="4" column="115" selection-start="209" selection-end="209" vertical-scroll-proportion="0.06444683" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
