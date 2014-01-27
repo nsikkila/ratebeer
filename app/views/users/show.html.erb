@@ -22,7 +22,9 @@
   <% @user.ratings.each do |rating| %>
   <li>
     <%= rating %>
-    <%= link_to "Delete", rating, method: :delete %>
+    <% if @user == current_user %>
+        <%= link_to "Delete", rating, method: :delete %>
+    <% end %>
   </li>
   <% end %>
 </ul>
