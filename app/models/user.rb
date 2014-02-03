@@ -24,14 +24,22 @@ class User < ActiveRecord::Base
   def favorite_brewery
     return nil if ratings.empty?
     ratings_by_brewery = ratings.group_by{ | rating | rating.beer.brewery }
-    solve_favorite_brewery(ratings_by_brewery)
+    solve_favorite_x(ratings_by_brewery)
   end
 
-    def solve_favorite_brewery(ratings_by_brewery)
+  
+  def favorite_style
+    return nil if ratings.empty?
+    ratings_by_style = ratings.group_by{ | rating | rating.beer.style }
+    solve_favorite_x(ratings_by_style)
+  end
+
+  #Takes hash { x => [ratings of x] } and returns the x with highest average rating
+  def solve_favorite_x(ratings_by_x)
     favorite_so_far = nil
     best_avg_so_far = -1.0
 
-    ratings_by_brewery.each do | row |
+    ratings_by_x.each do | row |
       avg = row[1].inject(0){ | sum, rating | sum + rating.score }
       if avg > best_avg_so_far
         best_avg_so_far = avg
@@ -41,23 +49,5 @@ class User < ActiveRecord::Base
     favorite_so_far
   end
 
-  def favorite_style
-  	return nil if ratings.empty?
-  	ratings_by_style = ratings.group_by{ | rating | rating.beer.style }
-  	solve_favorite_style(ratings_by_style)
-  end
 
-  def solve_favorite_style(ratings_by_style)
-  	favorite_so_far = "None"
-  	best_avg_so_far = -1.0
-
-  	ratings_by_style.each do | row |
-  		avg = row[1].inject(0){ | sum, rating | sum + rating.score }
-  		if avg > best_avg_so_far
-  			best_avg_so_far = avg
-  			favorite_so_far = row[0]
-  		end
-  	end
-  	favorite_so_far
-  end
 end
