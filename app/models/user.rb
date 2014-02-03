@@ -23,7 +23,22 @@ class User < ActiveRecord::Base
 
   def favorite_brewery
     return nil if ratings.empty?
-    ratings.first.beer.brewery
+    ratings_by_brewery = ratings.group_by{ | rating | rating.beer.brewery }
+    solve_favorite_brewery(ratings_by_brewery)
+  end
+
+    def solve_favorite_brewery(ratings_by_brewery)
+    favorite_so_far = nil
+    best_avg_so_far = -1.0
+
+    ratings_by_brewery.each do | row |
+      avg = row[1].inject(0){ | sum, rating | sum + rating.score }
+      if avg > best_avg_so_far
+        best_avg_so_far = avg
+        favorite_so_far = row[0]
+      end
+    end
+    favorite_so_far
   end
 
   def favorite_style
