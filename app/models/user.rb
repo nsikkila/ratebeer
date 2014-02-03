@@ -23,7 +23,6 @@ class User < ActiveRecord::Base
 
   def favorite_brewery
     return nil if ratings.empty?
-
     ratings.first.beer.brewery
   end
 

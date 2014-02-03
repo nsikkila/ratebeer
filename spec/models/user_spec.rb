@@ -47,6 +47,18 @@ describe User do
 			expect(user.favorite_brewery).to eq(brewery)
 		end
 
+		it "is the one with highest average rating if several rated" do
+			brewery1 = FactoryGirl.create(:brewery, name:"brewery1")
+			brewery2 = FactoryGirl.create(:brewery, name:"brewery2")
+			brewery3 = FactoryGirl.create(:brewery, name:"brewery3")
+			brewery1.beers << create_beers_with_ratings(10,20,30, user)
+			brewery2.beers << create_beers_with_ratings(30,40,50, user)
+			brewery3.beers << create_beers_with_ratings(20,30,40, user)
+
+			expect(user.favorite_brewery).to eq(brewery2)
+
+		end
+
 	end
 
 	describe "favorite beer" do
@@ -131,9 +143,11 @@ def create_beer_with_rating(score, user)
 end
 
 def create_beers_with_ratings(*scores, user)
+	beers = Array.new
 	scores.each do | score |
-		create_beer_with_rating score, user
+		beers << create_beer_with_rating(score, user)
 	end
+	beers
 end
 
 def create_beer_with_rating_and_style(score, user, style)
@@ -148,8 +162,3 @@ def create_beers_with_ratings_and_style(*scores, user, style)
 	end
 end
 
-def create_beer_with_rating_and_brewery(score, user, brewery)
-	beer = FactoryGirl.create(:beer, brewery:brewery)
-	FactoryGirl.create(:rating, score:score, user:user, beer:beer)
-	beer
-end
