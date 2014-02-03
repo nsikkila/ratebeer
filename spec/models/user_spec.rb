@@ -28,8 +28,17 @@ describe User do
 		expect(User.count).to eq(0)
 	end
 
+	describe "favorite brewery" do
+		let(:user){ FactoryGirl.create(:user) }
+
+		it "has the method for determining one" do
+			user.should respond_to :favorite_brewery
+		end
+
+	end
+
 	describe "favorite beer" do
-			let(:user){ FactoryGirl.create(:user) }
+		let(:user){ FactoryGirl.create(:user) }
 
 		it "has the method for detemining one" do
 			user.should respond_to :favorite_beer
