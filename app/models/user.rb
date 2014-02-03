@@ -13,7 +13,12 @@ class User < ActiveRecord::Base
   	
   def favorite_beer
   	return nil if ratings.empty?
-  	ratings.sort_by{ | r | r.score }.last.beer
+
+  	#yksi SQL-kysely, joka sisältää järjestämisen. suurella aineistolla nopeampi
+  	ratings.order(score: :desc).limit(1).first.beer
+
+  	#kaksi erillistä SQL-kyselyä ja järjestäminen muistissa
+  	#ratings.sort_by{ | r | r.score }.last.beer
   end
 
 end
