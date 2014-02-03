@@ -35,6 +35,10 @@ describe User do
 			user.should respond_to :favorite_brewery
 		end
 
+		it "without ratings does not have one" do
+			expect(user.favorite_brewery).to eq(nil)
+		end
+
 	end
 
 	describe "favorite beer" do
