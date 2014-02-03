@@ -7,29 +7,36 @@
 
 <p>Has made <%= @user.ratings.count %> ratings.
   <% if not @user.ratings.count == 0 %>
-   Average <%= @user.average_rating %>
+  Average <%= @user.average_rating %>
   <% end %>
 </p>
 
 <h2>Beer Clubs:</h2>
 <ul>
-<% @user.beer_clubs.each do | club |%>
+  <% @user.beer_clubs.each do | club |%>
   <li><%= link_to "#{club.name}", club %></li>
-<% end %>
+  <% end %>
 </ul>
+
+<% if not @user.ratings.empty? %>
 <h2>Ratings:</h2>
 <ul>
   <% @user.ratings.each do |rating| %>
   <li>
     <%= rating %>
     <% if @user == current_user %>
-        <%= link_to "Delete", rating, method: :delete %>
+    <%= link_to "Delete", rating, method: :delete %>
     <% end %>
   </li>
-  <% end %>
+
+<% end %>
 </ul>
+<p>Favorite style: <%= @user.favorite_style %></p>
+<% end %>
+
+
 <% if current_user == @user %>
-    <%= link_to 'Destroy', user_path(@user), method: :delete, data: { confirm: 'Are you sure?' } %> |
-    <%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Destroy', user_path(@user), method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Edit', edit_user_path(@user) %> |
 <% end %>
 <%= link_to 'Back', users_path %>
