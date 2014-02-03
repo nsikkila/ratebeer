@@ -39,6 +39,14 @@ describe User do
 			expect(user.favorite_brewery).to eq(nil)
 		end
 
+		it "is the only rated if only one rating" do
+			brewery = FactoryGirl.create(:brewery)
+			beer = create_beer_with_rating(10, user)
+			brewery.beers << beer
+
+			expect(user.favorite_brewery).to eq(brewery)
+		end
+
 	end
 
 	describe "favorite beer" do
@@ -138,4 +146,10 @@ def create_beers_with_ratings_and_style(*scores, user, style)
 	scores.each do | score |
 		create_beer_with_rating_and_style score, user, style
 	end
+end
+
+def create_beer_with_rating_and_brewery(score, user, brewery)
+	beer = FactoryGirl.create(:beer, brewery:brewery)
+	FactoryGirl.create(:rating, score:score, user:user, beer:beer)
+	beer
 end
