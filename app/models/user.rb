@@ -21,4 +21,7 @@ class User < ActiveRecord::Base
   	#ratings.sort_by{ | r | r.score }.last.beer
   end
 
+  def favorite_style
+  end
+
 end
