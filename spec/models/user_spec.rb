@@ -62,6 +62,10 @@ describe User do
 			user.should respond_to :favorite_style
 		end
 
+		it "without ratings does not have one" do
+			expect(user.favorite_style).to eq(nil)
+		end
+
 	end
 
 	describe "with a proper password" do
