@@ -24,4 +24,19 @@ describe "Breweries page" do
 
 	end
 
+	it "allows user to navigate to page of a brewery" do
+		breweries = ["Koff", "Karjala", "Schlenkerla"]
+		year = 1896
+		breweries.each do | brewery_name |
+			FactoryGirl.create(:brewery, name:brewery_name, year: year += 1)
+		end
+
+		visit breweries_path
+
+		click_link "Koff"
+
+		expect(page).to have_content "Koff"
+		expect(page).to have_content "Established year: 1897"
+	end
+
 end
