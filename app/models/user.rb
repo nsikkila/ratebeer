@@ -21,6 +21,9 @@ class User < ActiveRecord::Base
   	#ratings.sort_by{ | r | r.score }.last.beer
   end
 
+  def favorite_brewery
+  end
+
   def favorite_style
   	return nil if ratings.empty?
   	ratings_by_style = ratings.group_by{ | rating | rating.beer.style }
