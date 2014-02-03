@@ -72,6 +72,14 @@ describe User do
 			expect(user.favorite_style).to eq("Lager")
 		end
 
+		it "is the one with highest average rating if several rated" do
+			create_beers_with_ratings_and_style(10, 20, 30, user, "Lager") #20
+			create_beers_with_ratings_and_style(20, 50, 45, user, "Porter") #35
+			create_beers_with_ratings_and_style(10, 20, user, "IPA") #15
+
+			expect(user.favorite_style).to eq("Porter")
+		end
+
 	end
 
 	describe "with a proper password" do
@@ -111,4 +119,10 @@ def create_beer_with_rating_and_style(score, user, style)
 	beer = FactoryGirl.create(:beer, style:style)
 	FactoryGirl.create(:rating, score:score, beer:beer, user:user)
 	beer
+end
+
+def create_beers_with_ratings_and_style(*scores, user, style)
+	scores.each do | score |
+		create_beer_with_rating_and_style score, user, style
+	end
 end
