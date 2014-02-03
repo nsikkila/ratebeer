@@ -55,6 +55,15 @@ describe User do
 
 	end
 
+	describe "favorite style" do
+		let(:user){ FactoryGirl.create(:user) }
+
+		it "has the method for determining" do
+			user.should respond_to :favorite_style
+		end
+
+	end
+
 	describe "with a proper password" do
 		let(:user){ FactoryGirl.create(:user) }
 
