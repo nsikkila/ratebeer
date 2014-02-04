@@ -19,10 +19,8 @@ describe "Beer" do
 		fill_in('beer_name', with:'')
 		click_button "Create Beer"
 
-		save_and_open_page
+		expect(current_path).to eq(beers_path)
+		expect(page).to have_content 'error prohibited this beer from being saved:'
 		expect(Beer.count).to eq(0)
-		
-		expect(current_path).to eq(new_beer_path)
-
 	end
 end
