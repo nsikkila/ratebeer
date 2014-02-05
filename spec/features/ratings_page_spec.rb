@@ -10,7 +10,7 @@ describe "Ratings page" do
 
 	describe "when ratings exist" do
 		let!(:user1){ FactoryGirl.create :user }
-		let!(:user2){ FactoryGirl.create :user, name:'user2'}
+		let!(:user2){ FactoryGirl.create :user, username:'user2'}
 		let!(:beer1){ FactoryGirl.create :beer, name:'beer1'}
 		let!(:beer2){ FactoryGirl.create :beer, name:'beer2'}
 		let!(:beer3){ FactoryGirl.create :beer, name:'beer3'}
