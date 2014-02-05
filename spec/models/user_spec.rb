@@ -1,4 +1,5 @@
 require 'spec_helper'
+include OwnTestHelper
 
 describe User do
 	it "has the username set correctly" do
@@ -135,30 +136,3 @@ describe User do
 	end
 
 end
-
-def create_beer_with_rating(score, user)
-	beer = FactoryGirl.create(:beer)
-	FactoryGirl.create(:rating, score:score, beer:beer, user:user)
-	beer
-end
-
-def create_beers_with_ratings(*scores, user)
-	beers = Array.new
-	scores.each do | score |
-		beers << create_beer_with_rating(score, user)
-	end
-	beers
-end
-
-def create_beer_with_rating_and_style(score, user, style)
-	beer = FactoryGirl.create(:beer, style:style)
-	FactoryGirl.create(:rating, score:score, beer:beer, user:user)
-	beer
-end
-
-def create_beers_with_ratings_and_style(*scores, user, style)
-	scores.each do | score |
-		create_beer_with_rating_and_style score, user, style
-	end
-end
-
