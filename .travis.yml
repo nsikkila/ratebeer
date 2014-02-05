@@ -1,10 +1,15 @@
 language: ruby
-
 rvm:
- - 2.0.0
-
+- 2.0.0
 script:
- - bundle exec rake db:migrate --trace
- - RAILS_ENV=test bundle exec rake db:migrate --trace
- - bundle exec rake db:test:prepare
- - bundle exec rspec spec/
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec spec/
+deploy:
+  provider: heroku
+  api_key:
+    secure: OWOxSRVMFK+lq7XiOzzK6BI2hV36VFcAtISNwbigjndwjsrtrCbZbmp+QmcXVfwx6lK3yJfSISL6JByqtfOX0i37GVeGj0s+qlrfV30iRk93eftrnnX/AcRlHeXC79/xMjzxBWaTqqq+rhHDVZ2naaoBM34sm6Xfty+LUcBUvAI=
+  app: stormy-forest-4517
+  on:
+    repo: nsikkila/ratebeer
