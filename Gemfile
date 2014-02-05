@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -16,6 +17,7 @@ group :test do
 	gem 'capybara'
 	gem 'launchy'
   gem 'simplecov', require:false
+  gem 'coveralls', require: false
 end
 
 
