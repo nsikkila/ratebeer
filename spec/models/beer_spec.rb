@@ -1,5 +1,9 @@
 require 'spec_helper'
 
+BeerClub
+BeerClubsController
+MembershipsController
+
 describe Beer do
 
 	it "is not saved without a name" do
