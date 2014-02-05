@@ -1,14 +1,15 @@
 require 'spec_helper'
-
+include OwnTestHelper
 
 describe "Beer" do
 	before :each do
 		FactoryGirl.create(:brewery)
+    FactoryGirl.create(:user)
+    sign_in(username:"Pekka", password:"Foobar1")
 		visit new_beer_path
 	end
 
-	it "when given a valid name, is added to the system" do		
-
+	it "when given a valid name, is added to the system" do
 		fill_in('beer_name', with:'Testiolut')
 		click_button "Create Beer"
 
