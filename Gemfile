@@ -17,9 +17,10 @@ group :test do
 	gem 'capybara'
 	gem 'launchy'
   gem 'simplecov', require:false
-  gem 'coveralls', require: false
+
 end
 
+gem 'coveralls', require: false
 
 group :production do
    	gem 'pg'
