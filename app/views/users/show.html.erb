@@ -20,7 +20,7 @@
 
 <% if not @user.ratings.empty? %>
 <h2>Ratings:</h2>
-<ul>
+<ul class="ratingList">
   <% @user.ratings.each do |rating| %>
   <li>
     <%= rating %>

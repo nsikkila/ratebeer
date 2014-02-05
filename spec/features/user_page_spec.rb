@@ -32,7 +32,10 @@ describe "User page" do
 		visit user_path(user1)
 
 		
-		click_link(page.first('a', :text => 'Delete'))
+		
+		within ".ratingList" do
+			click_link("Delete", :match => :first)
+		end
 		expect(user1.ratings.count).to eq(1)
 		
 	end	
