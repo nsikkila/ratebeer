@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
     best_avg_so_far = -1.0
 
     ratings_by_x.each do | row |
-      avg = row[1].inject(0){ | sum, rating | sum + rating.score }
+      avg = row[1].inject(0){ | sum, rating | sum + rating.score } / row[1].length.to_f
       if avg > best_avg_so_far
         best_avg_so_far = avg
         favorite_so_far = row[0]
