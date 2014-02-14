@@ -15,7 +15,7 @@ class PlacesController < ApplicationController
       url = "http://beermapping.com/webservice/loccity/#{api_key}/"
     end
 
-    response = HTTParty.get "#{url}#{params[:city]}"
+    response = HTTParty.get "#{url}#{ERB::Util.url_encode(params[:city])}"
     places = response.parsed_response['bmp_locations']['location']
 
     if places.is_a?(Hash) and places['id'].nil?
