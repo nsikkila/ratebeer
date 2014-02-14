@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/index.html.erb" afterPath="$PROJECT_DIR$/app/views/places/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/places_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/places_controller.rb" />
     </list>
     <ignored path="ratebeer.iws" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="places_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="375" selection-end="375" vertical-scroll-proportion="0.27389902" vertical-offset="0" max-vertical-offset="931">
+            <state line="19" column="17" selection-start="378" selection-end="378" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="931">
               <folding />
             </state>
           </provider>
@@ -797,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="375" selection-end="375" vertical-scroll-proportion="0.27389902" vertical-offset="0" max-vertical-offset="931">
+        <state line="19" column="17" selection-start="378" selection-end="378" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>

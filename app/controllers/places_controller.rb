@@ -14,9 +14,14 @@ class PlacesController < ApplicationController
       api_key = 'd2bbe218faf28bc0a65fc760e77eedf2'
       url = "http://beermapping.com/webservice/loccity/#{api_key}/"
     end
-    response = HTTParty.get(url+'helsinki')
-    places_from_api = response.parsed_response['bmp_locations']['location']
-    @places = [ Place.new(places_from_api.first)]
+
+    response = HTTParty.get "#{url}#{params[:city]}"
+
+    puts(response)
+
+    @places = response.parsed_response['bmp_locations']['location'].inject([]) do | set, place |
+      set << Place.new(place)
+    end
 
     render :index
 
