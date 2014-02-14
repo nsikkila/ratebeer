@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="418cbb6f-421e-4468-ac7a-f46dfe71cd9b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/index.html.erb" afterPath="$PROJECT_DIR$/app/views/places/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/places_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/places_controller.rb" />
     </list>
     <ignored path="ratebeer.iws" />
@@ -25,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="places_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="places_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="17" selection-start="378" selection-end="378" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="931">
+            <state line="28" column="19" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/places/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="9" selection-start="288" selection-end="288" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
+            <state line="15" column="9" selection-start="322" selection-end="322" vertical-scroll-proportion="0.24807057" vertical-offset="0" max-vertical-offset="907">
               <folding />
             </state>
           </provider>
@@ -132,8 +133,8 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/place.rb" />
-        <option value="$PROJECT_DIR$/app/views/places/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/places_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/places/index.html.erb" />
       </list>
     </option>
   </component>
@@ -787,16 +788,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/places/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="9" selection-start="288" selection-end="288" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="285">
+        <state line="28" column="19" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/places/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="17" selection-start="378" selection-end="378" vertical-scroll-proportion="0.30612245" vertical-offset="0" max-vertical-offset="931">
+        <state line="15" column="9" selection-start="322" selection-end="322" vertical-scroll-proportion="0.24807057" vertical-offset="0" max-vertical-offset="907">
           <folding />
         </state>
       </provider>

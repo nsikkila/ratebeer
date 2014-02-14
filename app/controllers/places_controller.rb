@@ -16,20 +16,24 @@ class PlacesController < ApplicationController
     end
 
     response = HTTParty.get "#{url}#{params[:city]}"
+    places = response.parsed_response['bmp_locations']['location']
 
-    puts(response)
+    if places.is_a?(Hash) and places['id'].nil?
+      redirect_to places_path, :notice => "No places in #{params[:city]}"
+    else
+      places = [places] if places.is_a?(Hash)
+      @places = places.inject([]) do | set, place |
+        set << Place.new(place)
+      end
 
-    @places = response.parsed_response['bmp_locations']['location'].inject([]) do | set, place |
-      set << Place.new(place)
+      render :index
     end
-
-    render :index
 
   end
 
   private
   def use_cache
-    false
+    true
   end
 
 end
