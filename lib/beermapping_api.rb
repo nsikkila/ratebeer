@@ -23,11 +23,11 @@ class BeermappingApi
 
   end
 
-  def get_url
+  def self.get_url
     if use_heroku_cache
-      url = 'http://stark-oasis-9187.herokuapp.com/api/'
+      return 'http://stark-oasis-9187.herokuapp.com/api/'
     else
-      url = "http://beermapping.com/webservice/loccity/#{api_key}/"
+      return "http://beermapping.com/webservice/loccity/#{api_key}/"
     end
   end
 
