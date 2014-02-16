@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
   def favorite_style
     return nil if ratings.empty?
     ratings_by_style = ratings.group_by{ | rating | rating.beer.style }
-    solve_favorite_x(ratings_by_style)
+    solve_favorite_x(ratings_by_style).name
   end
 
   #Takes hash { x => [ratings of x] } and returns the x with highest average rating
