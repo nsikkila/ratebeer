@@ -5,8 +5,15 @@ class PlacesController < ApplicationController
 
   end
 
+  def show
+    @place = BeermappingApi.places_in(session[:last_city]).select{ | place | place.id == :id}
+  end
+
   def search
+
+    session[:last_city] = :city
     @places = BeermappingApi.places_in(params[:city])
+
 
     if @places.empty?
       redirect_to places_path, notice:"No places in #{params[:city]}"
@@ -14,11 +21,6 @@ class PlacesController < ApplicationController
       render :index
     end
 
-  end
-
-  private
-  def use_cache
-    true
   end
 
 end
