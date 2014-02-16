@@ -1,2 +1,8 @@
-<h2><%= @place %></h2>
-<%= session[:last_city] %>
+<h2><%= @place.name %></h2>
+
+<p>
+  <%= @place.street %> <br />
+  <%= "#{@place.zip} #{@place.city}" %>
+</p>
+
+<iframe src=<%= @place.blogmap %>></iframe>
