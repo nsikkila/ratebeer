@@ -12,6 +12,8 @@ class BeerClubsController < ApplicationController
   # GET /beer_clubs/1
   # GET /beer_clubs/1.json
   def show
+   @membership = Membership.new
+    @membership.user = current_user
   end
 
   # GET /beer_clubs/new

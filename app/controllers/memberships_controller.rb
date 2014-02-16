@@ -14,9 +14,8 @@ class MembershipsController < ApplicationController
 
   # GET /memberships/new
   def new
-    @beerclubs = BeerClub.all
+    @beerclubs = BeerClub.all.reject{ |b| b.users.include? current_user }
     @membership = Membership.new
-    @membership.user_id = current_user.id
   end
 
   # GET /memberships/1/edit
@@ -27,6 +26,7 @@ class MembershipsController < ApplicationController
   # POST /memberships.json
   def create
     @membership = Membership.new(membership_params)
+    @membership.user = current_user
 
     respond_to do |format|
       if @membership.save
