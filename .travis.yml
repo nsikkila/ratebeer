@@ -13,3 +13,4 @@ deploy:
   app: stormy-forest-4517
   on:
     repo: nsikkila/ratebeer
+    branch: master
