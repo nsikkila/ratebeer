@@ -3,9 +3,9 @@ require 'spec_helper'
 describe "User page" do
 	let!(:user1){ FactoryGirl.create :user }
 	let!(:user2){ FactoryGirl.create :user, username:'user2'}
-	let!(:beer1){ FactoryGirl.create :beer, name:'beer1', style:"IPA"}
+	let!(:beer1){ FactoryGirl.create :beer, name:'beer1', style:FactoryGirl.create(:style, name:"IPA")}
 	let!(:beer2){ FactoryGirl.create :beer, name:'beer2'}
-	let!(:beer3){ FactoryGirl.create :beer, name:'beer3', style:"Lager"}
+	let!(:beer3){ FactoryGirl.create :beer, name:'beer3', style:FactoryGirl.create(:style, name:"Lager")}
 	let!(:rating1){ FactoryGirl.create :rating2, user:user1, beer:beer1}
 	let!(:rating2){ FactoryGirl.create :rating, user:user2, beer:beer2}
 	let!(:rating3){ FactoryGirl.create :rating, user:user1, beer:beer3}

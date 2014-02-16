@@ -22,5 +22,10 @@ FactoryGirl.define do
 		name "anonymous"
 		brewery
     style
-	end
+  end
+
+  factory :style do
+    name "nonamestyle"
+    description "desc missing"
+  end
 end

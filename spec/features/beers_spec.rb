@@ -5,6 +5,7 @@ describe "Beer" do
 	before :each do
 		FactoryGirl.create(:brewery)
     FactoryGirl.create(:user)
+    FactoryGirl.create(:style)
     sign_in(username:"Pekka", password:"Foobar1")
 		visit new_beer_path
 	end
@@ -21,7 +22,7 @@ describe "Beer" do
 		click_button "Create Beer"
 
 		expect(current_path).to eq(beers_path)
-		expect(page).to have_content 'error prohibited this beer from being saved:'
+		expect(page).to have_content 'prohibited this beer from being saved:'
 		expect(Beer.count).to eq(0)
 	end
 end
