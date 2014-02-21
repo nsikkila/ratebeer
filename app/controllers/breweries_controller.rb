@@ -8,6 +8,12 @@ class BreweriesController < ApplicationController
   # GET /breweries.json
   def index
     @breweries = Brewery.all
+
+    order = params[:order] || 'name'
+
+    case order
+      when 'name' then @breweries
+    end
   end
 
   # GET /breweries/1
