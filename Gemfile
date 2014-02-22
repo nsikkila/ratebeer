@@ -24,6 +24,7 @@ group :test do
 end
 
 gem 'coveralls', require: false
+gem 'jquery-turbolinks'
 
 group :production do
    	gem 'pg'
