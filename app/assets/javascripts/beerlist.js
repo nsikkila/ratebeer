@@ -1,4 +1,11 @@
 $(document).ready(function () {
-    $('#beers').html("hello from javascript");
-    console.log("hello console!");
+    $.getJSON('beers.json', function (beers) {
+       var beer_list = [];
+
+        $.each(beers, function (index, beer) {
+            beer_list.push('<li>' + beer['name'] + '</li>')
+        });
+
+        $('#beers').html('<ul>' + beer_list.join('') + '</ul>')
+    });
 });
