@@ -7,7 +7,7 @@ BEERS.show = function() {
         beer_list.push('<li>' + beer['name'] + '</li>')
     });
 
-    $('#beers').html('<ul>' + beer_list.join('') + '</ul>');
+    $("#beers").html('<ul>' + beer_list.join('') + '</ul>');
 };
 
 BEERS.reverse = function() {
@@ -16,14 +16,16 @@ BEERS.reverse = function() {
 
 $(document).ready(function () {
 
-    $('#reverse').click(function (e) {
-        BEERS.reverse();
-        BEERS.show();
-        e.preventDefault();
-    })
+
 
     $.getJSON('beers.json', function (beers) {
         BEERS.list = beers
-        BEERS.show
+        BEERS.show();
+    });
+
+    $("#reverse").click(function (e) {
+        BEERS.reverse();
+        BEERS.show();
+        e.preventDefault();
     });
 });
