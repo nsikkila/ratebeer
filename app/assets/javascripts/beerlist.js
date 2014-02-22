@@ -1,13 +1,11 @@
 var BEERS = {};
 
 BEERS.show = function() {
-    var beer_list = [];
+    var table = $("#beertable");
 
-    $.each(BEERS.list, function (index, beer) {
-        beer_list.push('<li>' + beer['name'] + '</li>')
+    $.each(BEERS.list, function(index, beer) {
+        table.append('<tr><td>' + beer['name'] + '</td></tr>')
     });
-
-    $("#beers").html('<ul>' + beer_list.join('') + '</ul>');
 };
 
 BEERS.reverse = function() {
