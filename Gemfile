@@ -15,12 +15,13 @@ group :development, :test do
 end
 
 group :test do
+  gem 'selenium-webdriver'
 	gem 'factory_girl_rails'
 	gem 'capybara'
 	gem 'launchy'
   gem 'simplecov', require:false
   gem 'webmock'
-
+  gem 'database_cleaner', '< 1.1.0'
 end
 
 gem 'coveralls', require: false
