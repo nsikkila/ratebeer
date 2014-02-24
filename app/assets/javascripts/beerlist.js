@@ -1,7 +1,9 @@
 var BEERS = {};
 
 BEERS.show = function() {
-    var table = $("#beertable");
+    $("#beertable tr:gt(0)").remove();
+
+    var table = $('#beertable');
 
     $.each(BEERS.list, function(index, beer) {
         table.append('<tr>'
@@ -38,6 +40,13 @@ BEERS.sort_by_brewery = function(){
 
 $(document).ready(function () {
 
+    if ( $('#beertable').length>0) {
+        $.getJSON('beers.json', function (beers) {
+            BEERS.list = beers
+            BEERS.show();
+        });
+    };
+
     $("#name").click(function (e) {
         BEERS.sort_by_name();
         BEERS.show();
@@ -55,12 +64,5 @@ $(document).ready(function () {
         BEERS.show();
         e.preventDefault();
     });
-    
-    if ( $('#beertable').length>0) {
-        $.getJSON('beers.json', function (beers) {
-            BEERS.list = beers
-            BEERS.show();
-        });
-    };
 
 });
