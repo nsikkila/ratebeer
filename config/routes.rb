@@ -23,6 +23,7 @@ Ratebeer::Application.routes.draw do
 
   get 'signup', to: 'users#new'
   get 'beerlist', to: 'beers#list'
+  get 'brewerylist', to: 'breweries#list'
 
   get 'signin', to: 'sessions#new'
   delete 'signout', to: 'sessions#destroy'
